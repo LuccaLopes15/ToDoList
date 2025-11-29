@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Web", "1. Web", "{143E33CE-986E-4B3C-B076-826E1434A4B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. App", "2. App", "{DA2A4D1D-D969-47AA-B198-5064D7EDFEB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Server", "3. Server", "{7FC153B4-5AB2-46FA-ABF2-87F75C8730A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Api", "1. Api", "{ADD30E08-6553-4F7B-80F5-AEA35E30A286}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{FD16B4C3-A3FD-40DC-988D-FB77FB55FC03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain", "3. Domain", "{E43077A0-D4BA-4CCD-9E9D-419DCA30C212}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infra", "4. Infra", "{B8D515C2-99B6-4554-BF77-3DA0472873C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Domain", "ToDoList.Domain\ToDoList.Domain.csproj", "{7FA9B7E1-0C85-40C5-9438-C21EC594B991}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Tests", "4. Tests", "{CEDE357B-3DA8-4F07-92B7-CF14D1DE7037}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FA9B7E1-0C85-40C5-9438-C21EC594B991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA9B7E1-0C85-40C5-9438-C21EC594B991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA9B7E1-0C85-40C5-9438-C21EC594B991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA9B7E1-0C85-40C5-9438-C21EC594B991}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ADD30E08-6553-4F7B-80F5-AEA35E30A286} = {7FC153B4-5AB2-46FA-ABF2-87F75C8730A3}
+		{FD16B4C3-A3FD-40DC-988D-FB77FB55FC03} = {7FC153B4-5AB2-46FA-ABF2-87F75C8730A3}
+		{E43077A0-D4BA-4CCD-9E9D-419DCA30C212} = {7FC153B4-5AB2-46FA-ABF2-87F75C8730A3}
+		{B8D515C2-99B6-4554-BF77-3DA0472873C2} = {7FC153B4-5AB2-46FA-ABF2-87F75C8730A3}
+		{7FA9B7E1-0C85-40C5-9438-C21EC594B991} = {E43077A0-D4BA-4CCD-9E9D-419DCA30C212}
+	EndGlobalSection
+EndGlobal
