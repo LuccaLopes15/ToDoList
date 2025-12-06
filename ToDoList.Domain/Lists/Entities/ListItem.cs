@@ -8,11 +8,12 @@ namespace ToDoList.Server.Domain.Lists.Entities;
 public sealed class ListItem : Entity
 {
     public string Title { get; private set; } = string.Empty;
-    public string Description { get; private set; } = string.Empty;
+    public string? Description { get; private set; }
     public ItemStatus Status { get; private set; }
     public Guid ListId { get; private set; }
+    public List? List { get; private set; }
 
-    public ListItem(string title, string description, Guid ListId)
+    public ListItem(string title, string? description, Guid ListId)
     {
         SetTitle(title);
         SetDescription(description);
@@ -28,12 +29,20 @@ public sealed class ListItem : Entity
         Title = title.Trim();
     }
 
-    public void SetDescription(string description)
+    public void SetDescription(string? description)
     {
-        Guard.AgainstNullOrWhiteSpace(description, nameof(Description));
-        Guard.Against<DomainException>(description.Length < 3, "A descrição deve ter no mínimo 3 caracteres.");
-        Guard.Against<DomainException>(description.Length > 200, "A descrição deve ter no máximo 200 caracteres.");
+        if(string.IsNullOrWhiteSpace(description))
+        {
+            description = null;
+        }
+        else
+        {
+            Guard.Against<DomainException>(description.Length < 3, "A descrição deve ter no mínimo 3 caracteres.");
+            Guard.Against<DomainException>(description.Length > 200, "A descrição deve ter no máximo 200 caracteres.");
 
-        Description = description.Trim();
+            description = description.Trim();
+        }
+
+        Description = description;
     }
 }
