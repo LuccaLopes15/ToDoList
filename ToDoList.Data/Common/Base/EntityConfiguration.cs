@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using ToDoList.Server.Domain.Common.Base;
+using ToDoList.Shared.Domain.Common.Base;
 
-namespace ToDoList.Data.Configurations.Base;
+namespace ToDoList.Data.Common.Base;
 
 public class EntityConfiguration<T> : IEntityTypeConfiguration<T> where T : Entity
 {

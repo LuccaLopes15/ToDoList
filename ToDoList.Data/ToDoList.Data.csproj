@@ -16,7 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ToDoList.Domain\ToDoList.Server.Domain.csproj" />
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoList.Shared.Domain\ToDoList.Shared.Domain.csproj" />
   </ItemGroup>
 
 </Project>

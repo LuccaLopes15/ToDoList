@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Sync\Commands\Create\" />
+    <Folder Include="Sync\Commands\Delete\" />
+    <Folder Include="Sync\Commands\Update\" />
+    <Folder Include="Sync\DomainEventHandlers\" />
+    <Folder Include="Sync\Queries\DTOs\" />
+    <Folder Include="Sync\Queries\GetAll\" />
+    <Folder Include="Sync\Queries\GetById\" />
+    <Folder Include="Lists\Commands\Create\" />
+    <Folder Include="Lists\Commands\Delete\" />
+    <Folder Include="Lists\Commands\Update\" />
+    <Folder Include="Lists\DomainEventHandlers\" />
+    <Folder Include="Lists\Queries\DTOs\" />
+    <Folder Include="Lists\Queries\GetAll\" />
+    <Folder Include="Lists\Queries\GetById\" />
+  </ItemGroup>
+
+</Project>

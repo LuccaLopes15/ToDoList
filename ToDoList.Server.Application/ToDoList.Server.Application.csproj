@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Lists\Commands\Delete\" />
+    <Folder Include="Lists\Commands\Update\" />
+    <Folder Include="Lists\DomainEventHandlers\" />
+    <Folder Include="Lists\Queries\GetById\" />
+    <Folder Include="Lists\Queries\GetAll\" />
+    <Folder Include="Lists\Queries\DTOs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoList.Shared.Domain\ToDoList.Shared.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
